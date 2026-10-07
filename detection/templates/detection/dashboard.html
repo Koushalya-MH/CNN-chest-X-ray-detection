@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+
+    <div class="container">
+
+        <span class="navbar-brand">
+            Chest X-Ray CNN
+        </span>
+
+        <a href="/logout/" class="btn btn-danger">
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+<div class="container mt-5">
+
+    <h1>Welcome, {{ user.username }}</h1>
+
+    <p class="lead">
+        Chest X-Ray Detection Dashboard
+    </p>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <div class="card p-4 text-center">
+                <h4>Upload X-Ray</h4>
+                <p>Upload a chest X-ray for CNN analysis.</p>
+                <button class="btn btn-primary">
+                    Upload
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-4 text-center">
+                <h4>Prediction History</h4>
+                <p>View your previous predictions.</p>
+                <button class="btn btn-secondary">
+                    History
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-4 text-center">
+                <h4>Feedback</h4>
+                <p>Give feedback about the system.</p>
+                <button class="btn btn-success">
+                    Feedback
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
